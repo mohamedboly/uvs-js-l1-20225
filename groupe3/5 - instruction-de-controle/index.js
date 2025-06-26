@@ -101,18 +101,35 @@
 // console.log("Bonjour Mohamadou")
 // console.log("Bonjour Aicha")
 // console.log("Bonjour Ngor")
-const etudiants = ["Fatima", "Amadou", "Demba", "Mohamadou", "Aicha", "Ngor"]
-let i = 0;
-for( i = 0; i < etudiants.length; i = i + 2){
-  console.log("i = " + i)
-  console.log("Bonjour " + etudiants[i])
-}
+// const etudiants = ["Fatima", "Amadou", "Demba", "Mohamadou", "Aicha", "Ngor"]
+// let i = 0;
+// for( i = 0; i < etudiants.length; i++){
+//   console.log("i = " + i)
+//   console.log("Bonjour " + etudiants[i])
+// }
 
-console.log("la valeur de i apres la boucle : " + i)
-console.log("le programme continue")
+// console.log("la valeur de i apres la boucle : " + i)
+// console.log("le programme continue")
 
 
 // for(let nombre = 0; nombre <= 20; nombre++){
 //     console.log("le nombre est egale a " + nombre);
 // }
 
+console.log("avant la boucle while")
+
+let index = 10;
+while (index < 10){
+ console.log("index = " + index);
+ index++;
+}
+console.log("apres la boucle while")
+
+console.log("avant la boucle  do while")
+
+do {
+  console.log("index = " + index);
+  index++;
+} while (index < 10)
+
+console.log("apres la boucle do while")
