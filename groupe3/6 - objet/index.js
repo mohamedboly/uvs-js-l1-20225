@@ -107,21 +107,33 @@ console.log(professeur.prenom)
 //     age: 36
 // }
 
-var person = {
-    _age: 0,  // propriété interne privée par convention (avec _)
+let person = {
+    age: 0,
+    prenom: "Moussa",
 
     get age() {
-        return this._age;
-    },
+        return this.age;
+      },
 
     set age(value) {
         if (typeof value === 'number' && value >= 0 && value <= 120) {
-            this._age = value;
+            this.age = value;
         } else {
             console.log('Âge invalide. Veuillez entrer un nombre entre 0 et 120.');
         }
     }
+
 }
+
+person.age = 5
+
+console.log('age de la personne ')
+
+console.log(person.age)
+
+//  person.age = 778;
+// person.age = -8
+// console.log(person)
 
 
 
