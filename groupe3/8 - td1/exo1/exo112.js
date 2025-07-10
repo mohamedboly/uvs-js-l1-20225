@@ -1,0 +1,1 @@
+  alert("Je viens de débuter le cours de JS");
