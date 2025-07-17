@@ -38,10 +38,14 @@ console.log("Appel de getAge dans objet literal")
 
 const eleve = {
     age: getAge,
-    niveau: "2nde"
+    niveau: "2nde",
+    afficher: function (nom){
+        console.log("Hello "+nom)
+    }
 }
 
 console.log(eleve.age("1998"))
+console.log(eleve.afficher("Moussa"))
 
 console.log("Appel de getAge dans le contexte global")
 
